@@ -38,6 +38,13 @@ body {
   text-align: center;
 }
 
+.profile-photo {
+  width: 160px;
+  border-radius: 50%;
+  border: 3px solid #007acc;
+  margin-bottom: 1.5rem;
+}
+
 .home-name {
   font-size: 3rem;
   font-weight: 700;
@@ -167,24 +174,26 @@ body {
   border: 1px solid #ddd;
   border-radius: 10px;
   padding: 1.5rem;
-  background: #fff;
+  margin-bottom: 2.5rem;
 }
 
-.project-card h3 {
-  margin-bottom: 0.5rem;
-  color: #007acc;
+.project-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
 }
 
-.project-card ul {
-  margin: 1rem 0;
-  padding-left: 1.2rem;
+.project-links {
+  margin-top: 1rem;
 }
 
-.project-card a {
-  text-decoration: none;
+.project-links a {
+  margin-right: 1.5rem;
   font-weight: 600;
+  text-decoration: none;
   color: #007acc;
 }
+
 
 
 .skills-section {
@@ -277,20 +286,67 @@ body {
   font-size: 1rem;
 }
 
-.seccion {
-    padding: 6rem 2rem;
-    max-width: 900px;
-    margin: auto;
+.languages-section {
+  padding: 5rem 2rem;
 }
 
-.centrado {
-    text-align: center;
+.languages-container {
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-.proyecto {
-    border: 1px solid #ccc;
-    padding: 1rem;
-    margin-top: 1rem;
+.languages-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.languages-list li {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+.experience-section {
+  padding: 5rem 2rem;
+}
+
+.experience-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.experience-block {
+  margin-bottom: 3rem;
+}
+
+.experience-block h3 {
+  margin-bottom: 1.5rem;
+  color: #007acc;
+}
+
+.experience-item {
+  margin-bottom: 1.5rem;
+}
+
+.experience-item h4 {
+  margin-bottom: 0.3rem;
+  font-size: 1.05rem;
+}
+
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+
+.contact-icons a {
+  color: #007acc;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.contact-icons a:hover {
+  color: #005f99;
+  transform: translateY(-3px);
 }
 
 #scrollTopBtn {

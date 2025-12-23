@@ -1,24 +1,33 @@
 <!DOCTYPE html>
+<html lang="en"></html>
 <head>
     <meta charset="UTF-8">
     <title>Alexia García Sánchez | Portafolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
 <header class="navbar">
     <nav>
         <ul>
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#sobre-mi">Sobre mí</a></li>
-            <li><a href="#proyectos">Proyectos</a></li>
-            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 </header>
 
 <section id="home" class="home-section">
   <div class="home-content">
+    <img src="images/profile/alexia.jpg"
+     alt="Alexia García Sánchez"
+     class="profile-photo">
 
     <h1 class="home-name">Alexia García Sánchez</h1>
 
@@ -102,19 +111,22 @@
 
     <div class="projects-grid">
 
-      <div class="project-card">
-        <h3>ECG Signal Analysis using Machine Learning</h3>
-        <p>
-          Development of machine learning models to analyze and classify
-          electrocardiographic signals obtained from low-cost prototypes.
-        </p>
-        <ul>
-          <li>Python, CNN, signal processing</li>
-          <li>Fourier transform and feature extraction</li>
-          <li>Research internships and academic dissemination</li>
-        </ul>
-        <a href="#" target="_blank">View project</a>
+    <div class="project-card">
+      <img src="assets/images/projects/ecg-postcovid.jpg" alt="ECG post-COVID project">
+
+      <h3>ECG Signal Analysis for Post-COVID Patients</h3>
+
+      <p>
+        Development of an ECG system to acquire, process and analyze
+        cardiac electrical activity using Arduino and Python.
+      </p>
+
+      <div class="project-links">
+        <a href="https://repositorio..." target="_blank">Repository</a>
+        <a href="https://publicacion..." target="_blank">Publication</a>
       </div>
+    </div>
+
 
       <div class="project-card">
         <h3>Low-cost ECG Prototype for Post-COVID Patients</h3>
@@ -252,15 +264,124 @@
         <strong>Ask Questions to Make Data-Driven Decisions</strong> — Google
       </li>
       <li>
-        <strong>Python</strong>
+        <strong>Python</strong> - Santander Open Academy
       </li>
       <li>
-        <strong>Excel</strong>
+        <strong>Excel</strong> - Santander Open Academy
       </li>
     </ul>
 
   </div>
 </section>
+
+<section id="languages" class="languages-section">
+  <div class="languages-container">
+
+    <h2>Languages</h2>
+
+    <ul class="languages-list">
+      <li>
+        <strong>Spanish</strong> — Native
+      </li>
+      <li>
+        <strong>English</strong> — Advanced (technical and academic)
+      </li>
+    </ul>
+
+  </div>
+</section>
+
+
+<section id="experience" class="experience-section">
+  <div class="experience-container">
+
+    <h2>Experience</h2>
+
+    <!-- Internships -->
+    <div class="experience-block">
+      <h3>Research & Industry Internships</h3>
+
+      <div class="experience-item">
+        <h4>Research Intern — CIMAT Monterrey</h4>
+        <p>
+          Participation in applied research projects focused on biomedical
+          signal analysis and data-driven approaches.
+        </p>
+      </div>
+
+      <div class="experience-item">
+        <h4>Research Intern — Universidad Católica del Maule</h4>
+        <p>
+          Development and evaluation of machine learning methods for
+          electrocardiographic signal classification.
+        </p>
+      </div>
+
+      <div class="experience-item">
+        <h4>Clinical Engineering Intern — Hospital del Niño Poblano</h4>
+        <p>
+          Exposure to clinical environments, medical equipment management
+          and maintenance workflows.
+        </p>
+      </div>
+    </div>
+
+    <!-- Leadership -->
+    <div class="experience-block">
+      <h3>Academic Leadership</h3>
+
+      <div class="experience-item">
+        <h4>President — Biomedical Engineering Student Council</h4>
+        <p>
+          Led student representation, coordinated academic initiatives and
+          supported institutional communication.
+        </p>
+      </div>
+
+      <div class="experience-item">
+        <h4>Vice President — IEEE Student Branch</h4>
+        <p>
+          Supported technical activities, teamwork coordination and
+          student engagement initiatives.
+        </p>
+      </div>
+
+      <div class="experience-item">
+        <h4>Public Relations Representative — SOMIB Student Chapter</h4>
+        <p>
+          Coordination of communication and outreach activities related to
+          biomedical engineering.
+        </p>
+      </div>
+    </div>
+
+    <!-- Events -->
+    <div class="experience-block">
+      <h3>Event Organization & Outreach</h3>
+
+      <div class="experience-item">
+        <p>
+          Planning and organization of the II, III, IV and V Biomedical
+          Engineering Colloquium at Universidad Iberoamericana Puebla.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+<div class="contact-icons">
+  <a href="mailto:alexia.tuemail@gmail.com" aria-label="Email">
+    <i class="fas fa-envelope"></i>
+  </a>
+
+  <a href="https://www.linkedin.com/in/tu-linkedin" target="_blank" aria-label="LinkedIn">
+    <i class="fab fa-linkedin"></i>
+  </a>
+
+  <a href="https://github.com/tu-usuario" target="_blank" aria-label="GitHub">
+    <i class="fab fa-github"></i>
+  </a>
+</div>
 
 <button id="scrollTopBtn">↑</button>
 
