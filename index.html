@@ -2,33 +2,46 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <title>Alexia García Sánchez | Portafolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <title>Alexia García Sánchez | Portafolio</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  >
 </head>
 
 <body>
+
+<!-- ================= NAVBAR ================= -->
 <header class="navbar">
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#research">Research</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#contact-icons">Contact</a></li>
-        </ul>
-    </nav>
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#lenguages">Lenguages</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#certifications">Cerfications</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#contact-icons">Contact</a></li>
+    </ul>
+  </nav>
 </header>
 
+<!-- ================= HOME ================= -->
 <section id="home" class="home-section">
   <div class="home-content">
-    <img src="images/profile/alexia.jpg"
-     alt="Alexia García Sánchez"
-     class="profile-photo">
+
+    <img
+      src="images/profile/alexia.jpg"
+      alt="Alexia García Sánchez"
+      class="profile-photo"
+    >
 
     <h1 class="home-name">Alexia García Sánchez</h1>
 
@@ -57,6 +70,7 @@
   </div>
 </section>
 
+<!-- ================= RESEARCH ================= -->
 <section id="research" class="research-section">
   <div class="research-container">
 
@@ -64,7 +78,7 @@
     <h3>ECG Signal Analysis & Medical Device Prototyping</h3>
 
     <p class="research-intro">
-      This research line focuses on the design, validation and analysis of 
+      This research line focuses on the design, validation and analysis of
       electrocardiographic signals through low-cost medical device prototypes,
       signal processing techniques and machine learning approaches for
       clinical decision support.
@@ -97,10 +111,10 @@
       </div>
 
     </div>
-
   </div>
 </section>
 
+<!-- ================= PROJECTS ================= -->
 <section id="projects" class="projects-section">
   <div class="projects-container">
 
@@ -112,70 +126,198 @@
 
     <div class="projects-grid">
 
-    <div class="project-card">
-      <img src="assets/images/projects/ecg-postcovid.jpg" alt="ECG post-COVID project">
-
-      <h3>ECG Signal Analysis for Post-COVID Patients</h3>
-
-      <p>
-        Development of an ECG system to acquire, process and analyze
-        cardiac electrical activity using Arduino and Python.
-      </p>
-
-      <div class="project-links">
-        <a href="https://repositorio..." target="_blank">Repository</a>
-        <a href="https://publicacion..." target="_blank">Publication</a>
-      </div>
-    </div>
-
-
+      <!-- Project 1 -->
       <div class="project-card">
-        <h3>Low-cost ECG Prototype for Post-COVID Patients</h3>
+        <img src="assets/images/projects/ecg-postcovid.jpg" alt="ECG post-COVID project">
+
+        <h3>ECG Signal Analysis for Post-COVID Patients</h3>
+
         <p>
-          Design and validation of an electrocardiograph prototype for
-          monitoring cardiac activity in post-COVID scenarios.
+          Design and validation of a low-cost ECG system for post-COVID cardiac
+          monitoring, integrating biomedical instrumentation and signal analysis.
         </p>
-        <ul>
-          <li>Arduino, AD8232, MATLAB</li>
-          <li>Signal acquisition and filtering</li>
-          <li>First place – Expo Ibero</li>
+
+        <ul class="project-tags">
+          <li>Arduino</li>
+          <li>Python</li>
+          <li>MATLAB</li>
+          <li>ECG</li>
+          <li>Clinical Data</li>
         </ul>
-        <a href="#" target="_blank">View project</a>
+
+        <div class="project-highlights">
+          <span>🏆 First Place – Expo Ibero 2021</span>
+          <span>📌 Conference presentations</span>
+          <span>📌 Poster – CONNITACS 2022</span>
+        </div>
+
+        <div class="project-links">
+          <a href="https://repositorio..." target="_blank">
+            <i class="fas fa-database"></i> Repository
+          </a>
+          <a href="pdf\ECG_COVID.pdf" target="_blank">
+            <i class="fas fa-file-pdf"></i> Paper
+          </a>
+          <a href="poster.pdf" target="_blank">
+            <i class="fas fa-image"></i> Poster
+          </a>
+        </div>
       </div>
 
+      <!-- Project 2 -->
       <div class="project-card">
-        <h3>Myoelectric Prosthesis Control System</h3>
+        <img src="assets/images/projects/ecg-validation.jpg" alt="ECG device validation project">
+
+        <h3>ECG Signal Processing & Device Validation (AD8232)</h3>
+
         <p>
-          Evaluation of a low-complexity classification approach for
-          real-time myoelectric prosthesis control.
+          Development of mathematical code to filter, analyze and validate
+          electrocardiographic signals under regulatory guidelines.
         </p>
-        <ul>
-          <li>Python, MATLAB, Deep Learning</li>
-          <li>EMG signal classification</li>
-          <li>Undergraduate thesis project</li>
+
+        <ul class="project-tags">
+          <li>ECG</li>
+          <li>Signal Processing</li>
+          <li>Device Validation</li>
+          <li>MATLAB</li>
+          <li>Python</li>
+          <li>Arduino</li>
         </ul>
-        <a href="#" target="_blank">View project</a>
+
+        <div class="project-highlights">
+          <span>🏆 First Place – Expo Ibero 2022</span>
+          <span>📄 Institutional Repository</span>
+          <span>📌 Poster – CONNITACS 2023</span>
+          <span>📋 Regulatory focus (PROY-NOM-241-SSA1-2018)</span>
+        </div>
+
+        <div class="project-links">
+          <a href="https://repositorio.iberopuebla.mx/handle/20.500.11777/5582" target="_blank">
+            <i class="fas fa-database"></i> Repository
+          </a>
+          <a href="pdf\ECG_VALIDATION.pdf" target="_blank">
+            <i class="fas fa-file-pdf"></i> Paper
+          </a>
+          <a href="poster.pdf" target="_blank">
+            <i class="fas fa-image"></i> Poster
+          </a>
+        </div>
       </div>
 
+      <!-- Project 3 -->
       <div class="project-card">
+        <img src="assets/images/projects/myoelectric-prosthesis.jpg" alt="Myoelectric prosthesis control project">
+
+        <h3>Myoelectric Prosthesis Control Training Method</h3>
+
+        <p>
+          Development of a training methodology for transradial myoelectric
+          prosthesis control using machine learning-based classification.
+        </p>
+
+        <ul class="project-tags">
+          <li>EMG</li>
+          <li>Myoelectric Control</li>
+          <li>Machine Learning</li>
+          <li>CNN</li>
+          <li>Python</li>
+          <li>MATLAB</li>
+        </ul>
+
+        <div class="project-highlights">
+          <span>📄 Institutional Repository</span>
+          <span>🎤 Conferences 2024–2025</span>
+        </div>
+
+        <div class="project-links">
+          <a href="https://repositorio..." target="_blank">
+            <i class="fas fa-database"></i> Repository
+          </a>
+          <a href="pdf/EMG.pdf" target="_blank">
+            <i class="fas fa-file-pdf"></i> Paper
+          </a>
+        </div>
+      </div>
+
+      <!-- Project 4 -->
+      <div class="project-card">
+        <img src="assets/images/projects/medical-maintenance-app.jpg" alt="Medical equipment maintenance app">
+
         <h3>Medical Equipment Maintenance Management App</h3>
+
         <p>
-          Development of a digital tool to manage preventive and corrective
-          maintenance of medical equipment in clinical environments.
+          Design and development of a mobile application to support biomedical
+          engineering staff in the centralized management of preventive and
+          corrective maintenance of medical equipment, improving traceability,
+          organization and data-driven decision-making in clinical environments.
         </p>
-        <ul>
-          <li>Python, Firebase, FlutterFlow</li>
-          <li>Data-driven decision support</li>
-          <li>Institutional repository publication</li>
+
+        <ul class="project-tags">
+          <li>Biomedical Engineering</li>
+          <li>Healthcare Technology</li>
+          <li>Python</li>
+          <li>Firebase</li>
+          <li>FlutterFlow</li>
+          <li>Excel</li>
+          <li>Asset Management</li>
         </ul>
-        <a href="#" target="_blank">View project</a>
+
+        <div class="project-highlights">
+          <span>📄 Institutional repository publication</span>
+          <span>🎤 Expo Ibero P2025</span>
+        </div>
+
+        <div class="project-links">
+          <a href="https://repositorio.iberopuebla.mx/handle/20.500.11777/6190" target="_blank">
+            <i class="fas fa-database"></i> Repository
+          </a>      
+          <a href="pdf/APP.pdf" target="_blank">
+            <i class="fas fa-file-pdf"></i> Paper
+          </a>
+        </div>
+      </div>
+      
+      <!-- Project 5 -->
+       <div class="project-card">
+        <img src="assets/images/projects/myoelectric-control-evaluation.jpg" alt="Myoelectric prosthesis control evaluation">
+        <h3>Low-Complexity Myoelectric Control for Transradial Prosthesis</h3>
+        <p>
+          Evaluation of a myoelectric control method for transradial prostheses
+          using low-complexity classification algorithms capable of recognizing
+          functional hand movements in real time, prioritizing efficiency,
+          robustness and clinical applicability.
+        </p>
+        <ul class="project-tags">
+          <li>EMG</li>
+          <li>Myoelectric Control</li>
+          <li>Signal Processing</li>
+          <li>Machine Learning</li>
+          <li>Python</li>
+          <li>MATLAB</li>
+          <li>Arduino</li>
+          <li>Raspberry Pi</li>
+          <li>SolidWorks</li>
+          <li>3D Printing</li>
+        </ul>
+
+        <div class="project-highlights">
+          <span>🎓 Degree (Thesis) Project</span>
+          <span>📄 Institutional repository publication</span>
+          <span>🎤 Expo Ibero O2025</span>
+        </div>
+
+        <div class="project-links">
+          <a href="https://repositorio.iberopuebla.mx/handle/20.500.11777/6128" target="_blank">
+            <i class="fas fa-database"></i> Repository
+          </a>
+        </div>
       </div>
 
     </div>
-
   </div>
 </section>
 
+<!-- ================= SKILLS ================= -->
 <section id="skills" class="skills-section">
   <div class="skills-container">
 
@@ -186,69 +328,78 @@
       <div class="skill-card">
         <h3>Programming & Data Analysis</h3>
         <ul>
-          <li>Python (data analysis, scripting)</li>
-          <li>MATLAB (signal analysis, modeling)</li>
-          <li>Excel (data organization, reporting)</li>
-          <li>SQL (basic data querying)</li>
+          <li>Python</li>
+          <li>MATLAB</li>
+          <li>Excel</li>
+          <li>SQL</li>
         </ul>
       </div>
 
       <div class="skill-card">
         <h3>Medical Signal Processing & ML</h3>
         <ul>
-          <li>ECG & EMG signal processing</li>
-          <li>Filtering, feature extraction</li>
-          <li>Fourier transform & time-frequency analysis</li>
-          <li>Machine Learning & CNN models</li>
+          <li>ECG & EMG</li>
+          <li>Filtering & feature extraction</li>
+          <li>Machine Learning</li>
         </ul>
       </div>
 
       <div class="skill-card">
         <h3>Hardware & Prototyping</h3>
         <ul>
-          <li>Arduino, ESP32, Raspberry Pi</li>
-          <li>Biomedical sensors (AD8232)</li>
-          <li>3D design & prototyping</li>
-          <li>SolidWorks, EasyEDA, Proteus</li>
-        </ul>
-      </div>
-
-      <div class="skill-card">
-        <h3>Project & Research Skills</h3>
-        <ul>
-          <li>Experimental design & validation</li>
-          <li>Clinical data documentation</li>
-          <li>Technical reporting & presentations</li>
-          <li>Research dissemination & teamwork</li>
+          <li>Arduino</li>
+          <li>Raspberry Pi</li>
+          <li>SolidWorks</li>
+          <li>EasyEDA</li>
         </ul>
       </div>
 
     </div>
+  </div>
+</section>
+
+<!-- ================= LANGUAGES ================= -->
+<section id="languages" class="languages-section">
+  <div class="languages-container">
+
+    <h2>Languages</h2>
+
+    <ul class="languages-list">
+      <li>
+        <strong>Spanish</strong> — Native
+      </li>
+      <li>
+        <strong>English</strong> — Advanced (technical and academic)
+      </li>
+    </ul>
 
   </div>
+</section>
 
-  <section id="education" class="education-section">
+
+<!-- ================= EDUCATION ================= -->
+<section id="education" class="education-section">
   <div class="education-container">
 
     <h2>Education</h2>
 
     <div class="education-item">
       <h3>Bachelor of Biomedical Engineering (Student)</h3>
-      <p class="education-place">Universidad Iberoamericana Puebla</p>
-      <p class="education-details">
-        Focus on biomedical signal processing, medical devices, and applied research.
-      </p>
-      <p class="education-dates">Expected graduation: 2026</p>
+      <p>Universidad Iberoamericana Puebla</p>
+      <p>Expected graduation: 2026</p>
     </div>
 
     <div class="education-item">
-      <h3>High School Diploma</h3>
-      <p class="education-place">Centro Escolar Niños Heroes de Chapultepec</p>
+      <h3>Basic Education</h3>
+      <p>Centro Escolar Niños Héroes de Chapultepec</p>
+      <p>Graduate 2021</p>
     </div>
+
 
   </div>
 </section>
 
+ <!-- ================= CERTIFICATIONS ================= -->
 <section id="certifications" class="certifications-section">
   <div class="certifications-container">
 
@@ -275,24 +426,7 @@
   </div>
 </section>
 
-<section id="languages" class="languages-section">
-  <div class="languages-container">
-
-    <h2>Languages</h2>
-
-    <ul class="languages-list">
-      <li>
-        <strong>Spanish</strong> — Native
-      </li>
-      <li>
-        <strong>English</strong> — Advanced (technical and academic)
-      </li>
-    </ul>
-
-  </div>
-</section>
-
-
+<!-- ================= EXPERIENCE ================= -->
 <section id="experience" class="experience-section">
   <div class="experience-container">
 
@@ -371,8 +505,11 @@
   </div>
 </section>
 
+
+<!-- ================= CONTACT ================= -->
 <section id="contact-icons" class="contact-section">
   <div class="contact-icons">
+
     <a href="mailto:aleegr0213@gmail.com" aria-label="Email">
       <i class="fas fa-envelope"></i>
     </a>
@@ -384,6 +521,7 @@
     <a href="https://github.com/Aleegr0213" target="_blank" aria-label="GitHub">
       <i class="fab fa-github"></i>
     </a>
+
   </div>
 </section>
 
