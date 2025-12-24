@@ -19,3 +19,14 @@ window.addEventListener('scroll', () => {
 btn.addEventListener('click', () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 });
+
+document.querySelectorAll('.auto-carousel').forEach(carousel => {
+  const images = carousel.querySelectorAll('.carousel-image');
+  let currentIndex = 0;
+
+  setInterval(() => {
+    images[currentIndex].classList.remove('active');
+    currentIndex = (currentIndex + 1) % images.length;
+    images[currentIndex].classList.add('active');
+  }, 5000); // 5 segundos
+});
