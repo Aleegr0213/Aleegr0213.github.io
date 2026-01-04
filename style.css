@@ -331,7 +331,7 @@ body {
 }
 
 .education-container {
-  max-width: 900px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
@@ -364,7 +364,7 @@ body {
 }
 
 .certifications-container {
-  max-width: 900px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
@@ -383,25 +383,63 @@ body {
 }
 
 .languages-container {
-  max-width: 900px;
+  max-width: 800px;
   margin: 0 auto;
+  text-align: center;
 }
 
-.languages-list {
-  list-style: none;
-  padding-left: 0;
+.languages-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
 }
 
-.languages-list li {
-  margin-bottom: 1rem;
+.language-card {
+  border: 1px solid #ddd;
+  border-radius: 14px;
+  padding: 2rem 1.5rem;
+  background: #ffffff;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease;
+}
+
+.language-card:hover {
+  transform: translateY(-4px);
+}
+
+.language-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.6rem;
+}
+
+.language-level {
   font-size: 1rem;
+  font-weight: 600;
 }
+
+.language-level.native {
+  color: #2e7d32; /* verde */
+}
+
+.language-level.advanced {
+  color: #007acc;
+}
+
+.language-level span {
+  font-weight: 400;
+  font-size: 0.9rem;
+  display: block;
+  margin-top: 0.2rem;
+  color: #555;
+}
+
 .experience-section {
   padding: 5rem 2rem;
 }
 
 .experience-container {
-  max-width: 900px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
@@ -439,6 +477,41 @@ body {
 .contact-icons a:hover {
   color: #005f99;
   transform: translateY(-3px);
+}
+
+.contact-section {
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+.contact-section h2 {
+  margin-bottom: 1.5rem;
+}
+
+.contact-card {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.contact-email {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.contact-email i {
+  margin-right: 0.5rem;
+  color: #007acc;
+}
+
+.contact-email a {
+  text-decoration: none;
+  color: #222;
+}
+
+.contact-email a:hover {
+  color: #007acc;
 }
 
 #scrollTopBtn {
